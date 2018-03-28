@@ -7,16 +7,13 @@
 		<h1><a href="https://djangogirls.org">Django Girls Blog</a></h1>
 	</div>
 
-	<div>
-	    <p>published:14.06.2014, 12:14</p>
-	    <h2><a href="https://djangogirls.org">my first post</a></h2>
-        <p>Hola mi nombre es Santiago Martinez Geliz y este es mi primera aplicacion web y este es un texto para probar que todo anda bien.</p>
-    </div>
-
-    <div>
-    	<p>published: 14.06.2014, 12:14</p>
-    	<h2><a href="https://facebook.com">my second post</a>
-	    <p>Este es el segundo texto de ejemplo no tengo nada que escribir en este por eso solo estoy poniendo lo que se me ocurra. </p>
-    </div>
+	{% for post in posts %}
+		<div>
+			<p>published: {{ post.published_date }}</p>
+			<h1><a href="">{{ post.title }}</a></h1>
+			<p>{{ post.text|linebreaksbr }}</p>
+		</div>
+	{% endfor %}
+    
 </body>
 </html>
