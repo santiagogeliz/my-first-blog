@@ -28,7 +28,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+     color: #0C0A52;
+    font-family: 'Crete Round', serif;
 }
 
 .date {
@@ -55,6 +56,11 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
+    color: #0C0A52;
+    font-family: 'Crete Round', serif;
+}
+
+.nueva-idea h1 a, .nueva-idea h1 a:visited {
     color: #0C0A52;
     font-family: 'Crete Round', serif;
 }
